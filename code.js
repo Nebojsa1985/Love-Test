@@ -10,13 +10,13 @@ let leftstate = false;
 let rightstate = false;
 
 const answers = [
-  "no way",
-  "match",
-  "fatal atraction",
-  "maybe baby",
-  "tough",
-  "just friends",
-  "sex animals",
+  "Two of you, no way",
+  "Total match, ideal for each other",
+  "Fatal atraction, ment to be",
+  "Maybe baby",
+  "Tough, each of you must work hard",
+  "Just friends, sorry",
+  "Sex animals, hours of pleasure",
 ];
 
 menubtn.addEventListener("click", switchmenu);
@@ -56,5 +56,8 @@ function matched() {
       left.removeEventListener("click", handleLeft);
       right.removeEventListener("click", handleRight);
     }, 2000);
+    setTimeout(() => {
+      location.reload();
+    }, 5500);
   }
 }
