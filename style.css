@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Readex+Pro:wght@200;300;400;500;700&family=Ubuntu+Condensed&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Readex Pro", sans-serif;
+  font-family: "Ubuntu Condensed", sans-serif;
+}
+
+.menu {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: aliceblue;
+}
+
+.menu h1 {
+  font-size: 4.5rem;
+}
+
+.menu button {
+  width: 200px;
+  height: 100px;
+  background-color: black;
+  color: aliceblue;
+  border: 2px solid aliceblue;
+  border-radius: 14px;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.container {
+  display: none;
+  flex-direction: row;
+  position: relative;
+}
+
+.result {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+  font-weight: 900;
+  border-radius: 20px;
+  background-color: green;
+  border: 4px solid black;
+  background: transparent;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 800px;
+  height: 600px;
+}
+
+.left {
+  height: 100vh;
+  width: 48vw;
+  background-color: lightblue;
+  color: aliceblue;
+}
+
+.middle {
+  height: 100vh;
+  width: 4vw;
+  background-color: aliceblue;
+}
+
+.right {
+  height: 100vh;
+  width: 48vw;
+  background-color: plum;
+  color: aliceblue;
+}
