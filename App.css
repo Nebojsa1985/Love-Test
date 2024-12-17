@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lilita+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Glitch+Pop&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "Lilita One", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: palevioletred;
+  color: rgb(245, 220, 237);
+}
+
+.author-link {
+  text-decoration: none;
+  color: antiquewhite;
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container-controls {
+  height: 50px;
+}
+
+.info-btn {
+  cursor: pointer;
+  margin-left: 12px;
+  margin-top: 4px;
+  position: fixed;
+}
+
+.container-info {
+  position: relative;
+  width: 160px;
+  border-radius: 14px;
+  border: 2px solid rgb(119, 39, 65);
+  background-color: pink;
+  color: palevioletred;
+  margin-top: 36px;
+  margin-left: 14px;
+  padding: 6px;
+  position: fixed;
+}
+
+.info-close-btn {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.container-values {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  width: 100vw;
+  height: 100px;
+  text-align: center;
+}
+
+.container-message {
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.container-btn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  width: 100vw;
+  height: 60vh;
+  text-align: center;
+}
+
+.set-btn {
+  background-color: transparent;
+  border: none;
+  height: 50px;
+  width: 50px;
+  font-size: x-large;
+}
+.container-reset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-direction: column;
+  width: 100vw;
+  height: 220px;
+}
+.reset-btn {
+  border-radius: 14px;
+  border: none;
+  color: rgb(196, 65, 87);
+  font-size: x-large;
+  width: 300px;
+  min-height: 90px;
+}
+
+.reset-btn:hover {
+  background-color: rgb(196, 105, 120);
+  color: beige;
+}
+
+.reset-msg {
+  text-align: center;
+  padding: 10px;
+  font-size: x-large;
+}
+
+.duck-btn {
+  position: fixed;
+  right: 10px;
+}
+
+.unicorn-btn {
+  position: fixed;
+  right: 110px;
+}
+
+.owl-btn {
+  position: fixed;
+  right: 60px;
+}
+
+@media screen and (max-width: 420px) {
+  .container-message {
+    margin-top: 60px;
+  }
+  .container-reset {
+    height: 160px;
+    gap: 20px;
+  }
+  .container-btn {
+    height: 48vh;
+  }
+  .reset-msg {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 920px) and (min-width: 421px) {
+}
